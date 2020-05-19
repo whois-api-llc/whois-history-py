@@ -37,8 +37,10 @@ Make basic requests
     print(client.preview('whoisxmlapi.com'))
 
     # Get actual list of records.
-    print(client.purchase('whoisxmlapi.com'))
+    resp = client.purchase('whoisxmlapi.com')
 
+    for r in resp:
+        print(r.registrar_name)
 
 Additional options
 -------------------

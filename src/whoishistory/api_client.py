@@ -7,7 +7,7 @@ from .requester import Requester
 
 from .models.historic import WhoisRecord, ErrorMessage
 
-__version__ = '1.0.2'
+__version__ = '1.0.3'
 
 
 class ApiClient:
